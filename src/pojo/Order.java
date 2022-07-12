@@ -1,4 +1,4 @@
-package entity;
+package pojo;
 
 import java.util.Date;
 import java.io.Serializable;
