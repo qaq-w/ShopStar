@@ -18,7 +18,7 @@ public class Order implements Serializable {
     
     private Integer orderShopId;
     
-    private Date prderTime;
+    private Date orderTime;
 
 
     public Integer getOrderId() {
@@ -46,11 +46,11 @@ public class Order implements Serializable {
     }
 
     public Date getPrderTime() {
-        return prderTime;
+        return orderTime;
     }
 
     public void setPrderTime(Date prderTime) {
-        this.prderTime = prderTime;
+        this.orderTime = prderTime;
     }
 
 }
