@@ -19,7 +19,6 @@ public class TestServlet extends javax.servlet.http.HttpServlet {
         String phone = request.getParameter("phone");
         String pwd = request.getParameter("pwd");
         String[] annius = request.getParameterValues("anniu");
-
         User u = user.u(phone,pwd);
         if(u.getUserPhone()!=null){
             request.getRequestDispatcher("index.jsp").forward(request,response);
