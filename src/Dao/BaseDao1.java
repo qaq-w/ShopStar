@@ -2,9 +2,9 @@ package Dao;
 
 import java.sql.*;
 
-public class BaseDao {
+public class BaseDao1 {
        private String Driver="com.mysql.jdbc.Driver";
-       private String url="jdbc:mysql://localhost:3306/abdc";
+       private String url="jdbc:mysql://localhost:3306/aaaa";
        private String ursename="root";
        private String pwd="root";
        Connection connection=null;//数据库连接对象

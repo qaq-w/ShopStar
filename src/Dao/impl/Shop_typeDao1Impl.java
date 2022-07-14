@@ -1,20 +1,18 @@
 package Dao.impl;
 
-
-import Dao.BaseDao;
-import Dao.UserDao;
+import Dao.BaseDao1;
+import Dao.Shop_typeDao;
 
 import java.util.List;
 
-public class UserDaoImpl extends BaseDao implements UserDao {
+public class Shop_typeDao1Impl extends BaseDao1 implements Shop_typeDao {
     @Override
-    public int insertUser() {
-
+    public int insertShop_type() {
         return 0;
     }
 
     @Override
-    public int updateUser() {
+    public int updateShop_type() {
         return 0;
     }
 

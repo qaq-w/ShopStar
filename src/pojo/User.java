@@ -1,4 +1,4 @@
-package pojo1;
+package pojo;
 
 import java.io.Serializable;
 

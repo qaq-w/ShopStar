@@ -1,5 +1,7 @@
 package Dao;
 
+import pojo.User;
+
 import java.util.List;
 
 public interface UserDao {
@@ -8,5 +10,5 @@ public interface UserDao {
     //修改
     int updateUser();
     //查询
-    List<Object> all();
+    User all(User u);
 }
