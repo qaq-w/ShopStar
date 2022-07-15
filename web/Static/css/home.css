@@ -205,3 +205,14 @@ input[type="checkbox"] {
     top:900px;
     left:500px;
 }
+.pp{
+    position: absolute;
+    top:45px;
+    left:0px;
+    font-size: 13px;
+    color:red;
+}
+#pwdMsg{
+    font-size: 13px;
+    color:red;
+}

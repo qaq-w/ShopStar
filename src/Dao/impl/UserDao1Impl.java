@@ -28,15 +28,38 @@ public class UserDao1Impl extends BaseDao1 implements UserDao {
         ResultSet rs = null;
         User user = new User();
         try {
-            pst =co.prepareStatement("select * from user where user_phone=? and user_pwd=?");
-            Object [] a ={u.getUserPhone(),u.getUserPwd()};
-            pst.setObject(1,a[0]);
-            pst.setObject(2,a[1]);
-            rs=pst.executeQuery();
-            while (rs.next()){
+            pst = co.prepareStatement("select * from user where user_phone=? and user_pwd=?");
+            Object[] a = {u.getUserPhone(), u.getUserPwd()};
+            pst.setObject(1, a[0]);
+            pst.setObject(2, a[1]);
+            rs = pst.executeQuery();
+            while (rs.next()) {
                 user.setUserId(rs.getInt("user_id"));
                 user.setUserPhone(rs.getString("user_phone"));
                 user.setUserPwd(rs.getString("user_pwd"));
+            }
+            return user;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeALL(co, pst, rs);
+        }
+        return null;
+    }
+
+    @Override
+    public User allByPhone(User uu) {
+        Connection co = getConnection();
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+        User user = new User();
+        try {
+            pst = co.prepareStatement("select * from user where user_phone=? ");
+            Object[] a = {uu.getUserPhone()};
+            pst.setObject(1, a[0]);
+            rs = pst.executeQuery();
+            while (rs.next()) {
+                user.setUserPhone(rs.getString("user_phone"));
             }
             return user;
         } catch (SQLException e) {

@@ -11,4 +11,5 @@ public interface UserDao {
     int updateUser();
     //查询
     User all(User u);
+    User allByPhone(User uu);
 }

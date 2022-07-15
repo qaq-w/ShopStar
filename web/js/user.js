@@ -1,14 +1,14 @@
-function validateName(){
-    var name = document.getElementById("phone").value;
-    var msg=document.getElementById("nameMsg");
-     if(name.length!=11){
-        msg.innerHTML="您账号输入有误";
-        msg.style.color="#C0C0C0";
-        return false;
+function validatePwd(){
+    var name = document.getElementById("pwd").value;
+    var msg=document.getElementById("pwdMsg");
+    if(name.length>=8 && name.length<=16 ){
+        msg.innerHTML="";
+        msg.style.color="red";
+        return true;
     }
-    msg.innerHTML="您账号输入正确";
-    msg.style.color="green";
-    return true;
+    msg.innerHTML="请输入正确密码！！";
+    msg.style.color="red";
+    return false;
 }
 $(function () {
     $("input[name=phone]").blur(function () {

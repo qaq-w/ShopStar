@@ -41,12 +41,12 @@
             <div class="denglu">
                 <span class="phone">手机号码<sup>*</sup></span>
                 <br/>
-                <input type="tel" name="phone" placeholder="请输入手机号" id="phone" required="required" onblur="validateName()" ><br/>
+                <input type="tel" name="phone" placeholder="请输入手机号" id="phone" required="required" ><p class="pp"></p><br/>
                 <span id="nameMsg"></span>
                 <br/>
                 <span class="pwd">密码<sup>*</sup></span>
                 <br/>
-                <input type="password" name="pwd" placeholder="请输入密码" id="pwd" required="required" onblur="validatePwd()"><br/>
+                <input type="password" name="pwd" placeholder="请输入8-16位密码" id="pwd" required="required" onblur="validatePwd()"><br/>
                 <span id="pwdMsg"></span>
                 <br/>
                 <input type="checkbox" class="anniu" name="anniu"><span class="anniu1">下一次记住我</span>
