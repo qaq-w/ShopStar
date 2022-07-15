@@ -1,6 +1,7 @@
 package pojo;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * (ShopType)实体类
@@ -19,6 +20,19 @@ public class ShopType implements Serializable {
     
     private String typeName;
 
+    private List<Shop> shops;
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public List<Shop> getShops() {
+        return shops;
+    }
+
+    public void setShops(List<Shop> shops) {
+        this.shops = shops;
+    }
 
     public Integer getTypeId() {
         return typeId;
