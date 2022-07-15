@@ -1,11 +1,11 @@
 package Dao.impl;
 
-import Dao.BaseDao;
+import Dao.BaseDao1;
 import Dao.OrderDao;
 
 import java.util.List;
 
-public class OrderDaoImpl extends BaseDao implements OrderDao {
+public class OrderDao1Impl extends BaseDao1 implements OrderDao {
     @Override
     public int insertOrder() {
         return 0;

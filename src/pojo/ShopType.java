@@ -15,7 +15,7 @@ public class ShopType implements Serializable {
      * 编号
      */
     private Integer typeId;
-    
+
     private Integer typeNum;
     
     private String typeName;
