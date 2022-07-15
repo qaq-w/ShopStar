@@ -3,7 +3,7 @@ function validatePwd(){
     var msg=document.getElementById("pwdMsg");
     if(name.length>=8 && name.length<=16 ){
         msg.innerHTML="";
-        msg.style.color="red";
+        msg.style.color="green";
         return true;
     }
     msg.innerHTML="请输入正确密码！！";
@@ -33,5 +33,14 @@ $(function (){
         $(this).css("background-color","#363636");
     }).mouseout(function() {
         $(this).css("background-color","black");
+    });
+});
+$(function (){
+    var colors1="";
+    $("#dd").mouseover(function () {
+        colors = $(this).css("background-color");
+        $(this).css("background-color","#BEBEBE");
+    }).mouseout(function() {
+        $(this).css("background-color","white");
     });
 });

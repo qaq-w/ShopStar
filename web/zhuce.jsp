@@ -8,8 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <script type="text/javascript" src="Static/js/jquery-1.8.3.min(1).js"></script>
-    <script type="text/javascript" src="Static/js/Wei.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/Wei.js"></script>
     <meta charset="utf-8">
     <title></title>
     <link href="Static/css/zhuce.css" rel="stylesheet" type="text/css"/>
@@ -54,14 +54,14 @@
             <input type="text" placeholder="请输入你的名字" class="xing"/><br>
             <span id="zifu2">出生日期<span class="b">*</span></span><br><input type="date" value="2022/11/11" class="chengwei"><br>
             <span id="zifu3">请输入有效的手机号码<span class="b">*</span></span><br>
-            <input type="text" placeholder="请输入长度为11位的手机号" name="user_phone" class="xing" required="required" onblur=""><span></span><br>
+            <input type="text" placeholder="请输入长度为11位的手机号" name="user_phone" class="xing" required="required"><span id="nameAsg" ></span><br>
             <span id="zifu4">密码<span class="b">*</span></span><br>
-            <input type="password" placeholder="请输入8~16位的新密码" name="user_pwd" class="xing" required="required" onblur="" id="pwd"><span></span><br>
+            <input type="password" placeholder="请输入8~16位的新密码" name="user_pwd" class="xing" required="required" id="pwd"><span></span><br>
             <span id="zifu5">请再次输入密码<span class="b">*</span></span><br>
             <input type="password" placeholder="请再次输入您的新密码" name="user_pwd1" class="xing" required="required" onblur="f()" id="pwd1"><span id="qwer"></span><br>
-            <span class="wo"><input type="checkbox" checked="checked">我同意根据Versace的隐私政策进行Versace相关商业推广活动.</span><br>
+            <span class="wo"><input type="checkbox" checked="checked">我同意根据<a href="https://www.versace.cn/zh-cn/legal/privacy-policy.html" class="yinsi">Versace隐私政策</a>进行Versace相关商业推广活动.</span><br>
             <br>
-            <span class="wo1">继续操作即表示您确认阅读并理解Versace隐私政策</span><br>
+            <span class="wo1">继续操作即表示您确认阅读并理解<a href="https://www.versace.cn/zh-cn/legal/privacy-policy.html" class="yinsi">Versace隐私政策</a></span><br>
             <input type="submit" value="注册" id="tijiao">
         </form>
     </div>

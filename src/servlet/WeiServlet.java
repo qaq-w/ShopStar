@@ -27,7 +27,7 @@ public class WeiServlet extends HttpServlet {
         if(aBoolean==true){
            response.sendRedirect("login.jsp");
         }else if(aBoolean==false){
-            out.print("<script>alert('您信息输入有误请核实后输入!');window.location.href='zhuce.jsp'</script>");
+            out.print("您信息输入有误请核实后输入!");
         }
         out.flush();
         out.close();

@@ -165,3 +165,12 @@ ul{
     position: absolute;
     top: 1200px;
 }
+.yinsi:hover{
+    color: #BEBEBE;
+}
+.yinsi:link{
+    color: #BEBEBE;
+}
+.yinsi:visited{
+    color: #BEBEBE;
+}
