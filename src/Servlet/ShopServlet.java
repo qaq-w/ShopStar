@@ -1,7 +1,7 @@
-package Servlet;
+package servlet;
 
-import Service.ShopService;
-import Service.impl.ShopServiceImpl;
+import service.ShopService;
+import service.impl.ShopServiceImpl;
 import pojo.Shop;
 
 import javax.servlet.ServletException;
@@ -22,7 +22,6 @@ public class ShopServlet extends HttpServlet {
         ShopServiceImpl shopService = new ShopServiceImpl();
         List<Shop> select = shopService.select();
         PrintWriter out =response.getWriter();
-        out.println(select.get(0).getShopImg());
         HttpSession session =request.getSession();
         session.setAttribute("poto",select);
     }

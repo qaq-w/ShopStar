@@ -34,7 +34,7 @@ public class ShopDao1Impl extends BaseDao1 implements ShopDao {
         PreparedStatement pre =null;
         ResultSet res =null;
         List<Shop> select =new ArrayList();
-        String sql ="select * from shop INNER JOIN shop_type ON shop.shop_id = shop_type.type_id  ";
+        String sql ="select * from shop  ";
         try{
             pre =con.prepareStatement(sql);
             res =pre.executeQuery();

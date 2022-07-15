@@ -1,9 +1,9 @@
-package Service.impl;
+package service.impl;
 
 import Dao.ShopDao;
 import Dao.impl.ShopDao1Impl;
 import Dao.impl.ShopDao1Impl;
-import Service.ShopService;
+import service.ShopService;
 import pojo.Shop;
 
 import java.util.List;

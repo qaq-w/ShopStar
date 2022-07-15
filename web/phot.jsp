@@ -13,8 +13,7 @@
     <script type="text/javascript" ></script>
 </head>
     <body>
-    ${sessionScope.poto}
-    <c:forEach items="${poto}" var="i">
+    <c:forEach items="${sessionScope.poto}" var="i">
     <img src="${i.shopImg}" alt="加载失败"/>
     </c:forEach>
     </body>
