@@ -26,3 +26,12 @@ $(function () {
         });
     });
 });
+$(function (){
+    var colors="";
+    $("#d").mouseover(function () {
+        colors = $(this).css("background-color");
+        $(this).css("background-color","#363636");
+    }).mouseout(function() {
+        $(this).css("background-color","black");
+    });
+});

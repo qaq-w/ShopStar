@@ -1,0 +1,167 @@
+#nav_header{
+    width: 100%;
+    height: 35px;
+    background-size: cover;
+    background-color: black;
+    margin-top: -15px;
+}
+#font_size{
+    color: beige;
+    text-align: center;
+    font-size: 12px;
+    line-height: 35px;
+}
+#nav_body{
+    width: 100%;
+    height: 100px;
+
+}
+#nav_img{
+    margin-left: 30px;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+}
+li{
+    list-style: none;
+    float: left;
+    margin-left: 25px;
+    font-size: 15px;
+    line-height: 60px;
+    font-family: "黑体";
+    font-weight: 700;
+}
+ul{
+    height: 60px;
+    display: inline-block;
+}
+.nav_li:hover{
+    color: #000000;
+}
+.nav_li:link{
+    color: #000000;
+    text-decoration: none;
+}
+.nav_li:visited{
+    color: #000000;
+    text-decoration: none;
+}
+#nav_mp4{
+    width: 100%;
+    height: 800px;
+    margin-top: -20px;
+}
+
+#nav_img1{
+    position: absolute;
+    right: 190px;
+    top: 70px;
+}
+#nav_img2{
+    position: absolute;
+    right: 140px;
+    top: 70px;
+}
+#nav_img3{
+    position: absolute;
+    right: 90px;
+    top: 70px;
+}
+#nav_img4{
+    position: absolute;
+    right: 40px;
+    top: 70px;
+}
+.a{
+    position: absolute;
+    left: 800px;
+    top:40px;
+    margin-top:300px;
+}
+.ni{
+    background-color:#F5F5F5;
+    width: 100%;
+    height: 1100px;
+}
+.b{
+    font-size: 6px;
+    color: red;
+}
+.chengwei{
+    width: 335px;
+    height: 45px;
+    margin-top: 20px;
+    border: 0px;
+}
+.xing{
+    width: 330px;
+    height: 40px;
+    line-height:28px;
+    margin-top: 20px;
+    border: 0px;
+}
+#tijiao{
+    width: 310px;
+    height: 40px;
+    margin-top: 20px;
+}
+.zhuce{
+    position: absolute;
+    left: 130px;
+    top: -100px;
+}
+#zifu{
+    font-size: 14px;
+    position: absolute;
+    top: 127px;}
+#zifu1{
+    font-size: 14px;
+    position: absolute;
+    top: 208px;
+}
+#zifu2{
+    font-size: 14px;
+    position: absolute;
+    top: 293px;
+}
+#zifu3{
+    font-size: 14px;
+    position: absolute;
+    top: 378px;
+}
+#zifu4{
+    font-size: 14px;
+    position: absolute;
+    top: 463px;
+}
+#zifu5{
+    font-size: 14px;
+    position: absolute;
+    top: 542px;
+}
+#zifu6{
+    font-size: 14px;
+    position: relative;
+    top: 15px;
+}
+.wo{
+    font-size: 14px;
+    position: absolute;
+    top: 615px;
+}
+.wo1{
+    font-size: 14px;
+    position: absolute;
+    top: 660px;
+}
+#tijiao{
+    position: absolute;
+    top: 700px;
+    width: 330px;
+    background-color: black;
+    color: white;
+}
+.jsp{
+    position: absolute;
+    top: 1200px;
+}

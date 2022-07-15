@@ -10,8 +10,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+
 public class UserDao1Impl extends BaseDao1 implements UserDao {
-    @Override
     public int insertUser() {
         return 0;
     }
@@ -21,6 +21,11 @@ public class UserDao1Impl extends BaseDao1 implements UserDao {
         return 0;
     }
 
+    /**
+     * 登录查询用户密码是否正确
+     * @param u
+     * @return
+     */
     @Override
     public User all(User u) {
         Connection co = getConnection();
@@ -47,6 +52,11 @@ public class UserDao1Impl extends BaseDao1 implements UserDao {
         return null;
     }
 
+    /**
+     * 查询账号是否存在
+     * @param uu
+     * @return
+     */
     @Override
     public User allByPhone(User uu) {
         Connection co = getConnection();
@@ -68,5 +78,19 @@ public class UserDao1Impl extends BaseDao1 implements UserDao {
             closeALL(co, pst, rs);
         }
         return null;
+    }
+
+    /**
+     * 注册账号密码
+     * @param user
+     * @return
+     */
+    public int insertUser(User user){
+        Connection connection=getConnection();
+        PreparedStatement ps=null;
+        String sql="insert into user (user_id,user_phone,user_pwd) values (0,?,?)";
+        Object[]objects={user.getUserPhone(),user.getUserPwd()};
+        int count=executeUpdate(sql,objects);
+        return count;
     }
 }

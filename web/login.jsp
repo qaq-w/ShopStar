@@ -62,7 +62,9 @@
         <li>订单历史和地址簿</li>
         <li>将商品保存至心愿单</li>
     </ul>
-    <input type="submit" value="创建账户" id="dd">
+    <form action="zhuce.jsp" method="post">
+        <input type="submit" value="创建账户" id="dd" >
+    </form>
 </div>
     </div>
 </body>

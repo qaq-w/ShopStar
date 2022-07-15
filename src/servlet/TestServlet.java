@@ -21,7 +21,6 @@ public class TestServlet extends javax.servlet.http.HttpServlet {
         String[] annius = request.getParameterValues("anniu");
         User u = user.u(phone,pwd);
         if(u.getUserPhone()!=null){
-
             request.getRequestDispatcher("index.jsp").forward(request,response);
             HttpSession session = request.getSession();
             session.setAttribute("phone",phone);

@@ -163,10 +163,11 @@ input[type="checkbox"] {
     left:100px;
 }
 .ziti1{
-    color:#212121;
+    color:#363636;
+    font-size: 15px;
     font-family: AktivGrotesk,sans-serif;
     position:absolute;
-    top:170px;
+    top:200px;
     left:80px;
 }
 #dd{
