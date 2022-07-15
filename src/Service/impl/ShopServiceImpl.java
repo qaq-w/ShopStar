@@ -1,7 +1,8 @@
 package Service.impl;
 
 import Dao.ShopDao;
-import Dao.impl.ShopDaoImpl;
+import Dao.impl.ShopDao1Impl;
+import Dao.impl.ShopDao1Impl;
 import Service.ShopService;
 import pojo.Shop;
 
@@ -15,7 +16,7 @@ public class ShopServiceImpl implements ShopService {
      */
     @Override
     public List<Shop> select() {
-        ShopDao sd =new ShopDaoImpl();
+        ShopDao sd =new ShopDao1Impl();
         List<Shop> select = sd.select();
         return select;
     }
@@ -26,7 +27,7 @@ public class ShopServiceImpl implements ShopService {
      */
     @Override
     public List<Shop> Man() {
-        ShopDao sd1 =new ShopDaoImpl();
+        ShopDao sd1 =new ShopDao1Impl();
         List<Shop> Man =sd1.Man();
         return Man;
     }
@@ -37,7 +38,7 @@ public class ShopServiceImpl implements ShopService {
      */
     @Override
     public List<Shop> Ms() {
-        ShopDao sd2 =new ShopDaoImpl();
+        ShopDao sd2 =new ShopDao1Impl();
         List<Shop> Ms =sd2.Ms();
         return Ms;
     }
