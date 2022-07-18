@@ -1,8 +1,8 @@
-package service.impl;
+package Service.impl;
 
 import Dao.impl.UserDao1Impl;
 import pojo.User;
-import service.UserService;
+import Service.UserService;
 
 public class UserServiceImpl implements UserService {
     /**

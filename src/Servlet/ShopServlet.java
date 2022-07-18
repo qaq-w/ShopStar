@@ -1,7 +1,6 @@
-package servlet;
+package Servlet;
 
-import service.ShopService;
-import service.impl.ShopServiceImpl;
+import Service.impl.ShopServiceImpl;
 import pojo.Shop;
 
 import javax.servlet.ServletException;
@@ -11,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 
 @WebServlet(name = "ShopServlet",urlPatterns ={"/ShopServlet"} )
@@ -21,9 +19,9 @@ public class ShopServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         ShopServiceImpl shopService = new ShopServiceImpl();
         List<Shop> select = shopService.select();
-        PrintWriter out =response.getWriter();
         HttpSession session =request.getSession();
         session.setAttribute("poto",select);
+        response.sendRedirect("index.jsp");
     }
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request,response);

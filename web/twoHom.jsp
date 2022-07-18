@@ -1,19 +1,14 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: 001
-  Date: 2022/7/13
-  Time: 16:26
+  Date: 2022/7/18
+  Time: 14:46
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="Static/css/home.css"/>
-    <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
-    <script src="js/Home.js" type="text/javascript"></script>
+    <title>Title</title>
 </head>
 <body>
 <div id="nav_header">
@@ -32,13 +27,11 @@
     </ul>
     <img src="Static\img\home\1.png" id="nav_img1">
     <a href="heart.jsp"><img src="Static\img\home\2.png" id="nav_img2"></a>
-    <a href="login.jsp"><img src="Static\img\home\3.png" id="nav_img3"></a>
+    <a href="information"><img src="Static\img\home\3.png" id="nav_img3"></a>
     <img src="Static\img\home\4.png" id="nav_img4">
 </div>
 <video  autoplay loop muted id="nav_mp4" >
     <source src="Static\img\home\la-vacanza-2022-video-01062022-desk-final.mp4">
 </video>
-<c:forEach items="${sessionScope.poto}" var="i">
-    <img src="${i.shopImg}" alt="加载失败" class="img" id="${i.shopId}"/>
-</c:forEach>
 </body>
+</html>

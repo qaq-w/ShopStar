@@ -1,13 +1,12 @@
-package servlet;
+package Servlet;
 
+import Service.impl.UserServiceImpl;
 import pojo.User;
-import service.impl.UserServiceImpl;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
 
 @WebServlet(name = "TestServlet",urlPatterns = {"/Test"})
 public class TestServlet extends javax.servlet.http.HttpServlet {
@@ -21,7 +20,7 @@ public class TestServlet extends javax.servlet.http.HttpServlet {
         String[] annius = request.getParameterValues("anniu");
         User u = user.u(phone,pwd);
         if(u.getUserPhone()!=null){
-            request.getRequestDispatcher("index.jsp").forward(request,response);
+            request.getRequestDispatcher("twoHome.jsp").forward(request,response);
             HttpSession session = request.getSession();
             session.setAttribute("phone",phone);
             session.setAttribute("pwd",pwd);

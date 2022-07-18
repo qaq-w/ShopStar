@@ -1,7 +1,7 @@
-package servlet;
+package Servlet;
 
 import pojo.User;
-import service.impl.UserServiceImpl;
+import Service.impl.UserServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
