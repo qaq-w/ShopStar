@@ -30,8 +30,5 @@
     <a href="information"><img src="Static\img\home\3.png" id="nav_img3"></a>
     <img src="Static\img\home\4.png" id="nav_img4">
 </div>
-<video  autoplay loop muted id="nav_mp4" >
-    <source src="Static\img\home\la-vacanza-2022-video-01062022-desk-final.mp4">
-</video>
 </body>
 </html>
