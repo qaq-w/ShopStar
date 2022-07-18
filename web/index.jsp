@@ -16,11 +16,12 @@
     <script src="js/Home.js" type="text/javascript"></script>
 </head>
 <body>
+<div id="nav_html">
 <div id="nav_header">
     <p id="font_size">选购促销系列</p>
 </div>
 <div id="nav_body">
-    <img src="Static\img\home\QWE.png" id="nav_img" >
+    <img src="Static/img/home/QWE.png" id="nav_img" >
     <ul>
         <li class="ali"><a href="" class="nav_li">女士</a></li>
         <li class="ali"><a href="" class="nav_li">男士</a></li>
@@ -34,6 +35,7 @@
     <a href="heart.jsp"><img src="Static\img\home\2.png" id="nav_img2"></a>
     <a href="login.jsp"><img src="Static\img\home\3.png" id="nav_img3"></a>
     <img src="Static\img\home\4.png" id="nav_img4">
+</div>
 </div>
 <video  autoplay loop muted id="nav_mp4" >
     <source src="Static\img\home\la-vacanza-2022-video-01062022-desk-final.mp4">
