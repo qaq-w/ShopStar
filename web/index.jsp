@@ -28,7 +28,7 @@
         <li class="ali"><a href="" class="nav_li">幕后精彩</a></li>
     </ul>
     <img src="Static\img\home\1.png" id="nav_img1">
-    <img src="Static\img\home\2.png" id="nav_img2">
+    <a href="heart.jsp"><img src="Static\img\home\2.png" id="nav_img2"></a>
     <a href="login.jsp"><img src="Static\img\home\3.png" id="nav_img3"></a>
     <img src="Static\img\home\4.png" id="nav_img4">
 </div>
